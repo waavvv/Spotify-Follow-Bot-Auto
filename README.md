@@ -1,4 +1,8 @@
 <br/>
+  <p>
+    <a href="https://cdn.discordapp.com/attachments/944545335051685888/944545888192319488/MPTICKET_5.png" width="546" alt="mpticket" /></a>
+  </p>
+  <br />
 <div align="center">
 
   # Proxyless Spotify Follow Bot Auto
