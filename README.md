@@ -1,5 +1,8 @@
 <div align="center">
+  
   ![image](https://user-images.githubusercontent.com/102762968/161622560-22f88eae-709e-4c07-a66e-8147dd3d43dd.png)
+  
+  
   # Proxyless Spotify Follow Bot Auto
   
   From @useragents
