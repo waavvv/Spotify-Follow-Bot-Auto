@@ -1,6 +1,6 @@
 <div align="center">
   
-  ![image](https://user-images.githubusercontent.com/102762968/161622560-22f88eae-709e-4c07-a66e-8147dd3d43dd.png)
+  ![image](https://cdn.discordapp.com/attachments/968557691922415626/1013124133384618064/SPOTIFY_FOLLOW_BOT_AUTO.png)
   
   
   # Proxyless Spotify Follow Bot Auto
