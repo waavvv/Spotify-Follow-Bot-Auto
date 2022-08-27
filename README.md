@@ -1,5 +1,5 @@
 <div align="center">
-<br/>
+  <br />
   <p>
     <a href="https://cdn.discordapp.com/attachments/968557691922415626/1013124133384618064/SPOTIFY_FOLLOW_BOT_AUTO.png" width="546" alt="mpticket" /></a>
   </p>
