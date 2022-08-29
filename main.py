@@ -53,7 +53,7 @@ def thread_starter():
         counter += 1
         safe_print("Followed {}".format(counter))
     else:
-        time.sleep(1800)
+        time.sleep(10)
 
 while True:
     if threading.active_count() <= threads:
