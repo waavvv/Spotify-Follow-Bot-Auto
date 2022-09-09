@@ -1,3 +1,8 @@
+from random import choice
+words = [word.strip() for word in open("name.txt", encoding="utf-8")]
+len(words)
+336531
+word = choice(words)
 try:
     import requests, random, string
 except ImportError:
@@ -23,7 +28,7 @@ class spotify:
         proxies = None
         if self.proxy != None:
             proxies = {"https": f"http://{self.proxy}"}
-        data = f"birth_day=1&birth_month=01&birth_year=1970&collect_personal_info=undefined&creation_flow=&creation_point=https://www.spotify.com/uk/&displayname=github.com/useragents&email={email}&gender=neutral&iagree=1&key=a1e486e2729f46d6bb368d6b2bcda326&password={password}&password_repeat={password}&platform=www&referrer=&send-email=1&thirdpartyemail=0&fb=0"
+        data = f"birth_day=1&birth_month=01&birth_year=1970&collect_personal_info=undefined&creation_flow=&creation_point=https://www.spotify.com/uk/&displayname={word}&email={email}&gender=neutral&iagree=1&key=a1e486e2729f46d6bb368d6b2bcda326&password={password}&password_repeat={password}&platform=www&referrer=&send-email=1&thirdpartyemail=0&fb=0"
         try:
             create = self.session.post("https://spclient.wg.spotify.com/signup/public/v1/account", headers = headers, data = data, proxies = proxies)
             if "login_token" in create.text:
@@ -101,8 +106,11 @@ class spotify:
                 "https://api.spotify.com/v1/me/following?type=user&ids=" + self.profile,
                 headers = headers
             )
+            self.session.put(
+                
+            )
             return True, None
         except:
             return False, "while following"
 
-#Developed by https://github.com/useragents
+# TY USERAGENTS
