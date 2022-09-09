@@ -51,7 +51,7 @@ def thread_starter():
     result, error = obj.follow()
     if result == True:
         counter += 1
-        safe_print(f"{Fore.GREEN}[SUCCESS]" + "Followed ({})".format(counter))
+        safe_print(f"{Fore.RESET}[{Fore.GREEN}SUCCESS{Fore.RESET}] " + "Followed ({})".format(counter))
     else:
         time.sleep(1)
 
