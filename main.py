@@ -1,3 +1,4 @@
+from asyncio import sleep
 from follow_bot import spotify
 import threading, os, time
 from colorama import Fore, init
@@ -8,15 +9,14 @@ os.system(cmd)
 print(f"{Fore.RED}                     __\n                _   /  |\n              | \  \/_/\n               \_\| / __              \n                  \/_/__\           .--='/~\ \n           ____,__/__,_____,______)/   /[~]]]\n            -,-----,--\--,-----,---,\'-' [[~]]\n        Spotify Bot__/\_            '--=.\]/\n                  /_/ |\\\n                       \/\n\n")
 print(f"\n           {Fore.YELLOW}[ + ]{Fore.YELLOW} Spotify Auto | [{Fore.GREEN}Online{Fore.RESET}{Fore.YELLOW}]{Fore.YELLOW}")
 print(f"           {Fore.YELLOW}[ + ]{Fore.YELLOW} Proxy status | [{Fore.GREEN}Online{Fore.RESET}{Fore.YELLOW}]{Fore.YELLOW}")
-print(f"\n    {Fore.RED}All services are running smoothly! 9k/day{Fore.RED}")
+print(f"\n    {Fore.RED}All services are running smoothly! 9k/day{Fore.RESET}")
 
 lock = threading.Lock()
 counter = 0
 proxies = []
 proxy_counter = 0
-spotify_profile = str(input("Spotify Link or Username: "))
-threads = int(input("\nThreads: "))
-
+spotify_profile = str(input(f"{Fore.RED}Spotify Link or Username:{Fore.RESET} "))
+threads = int(input(f"\n{Fore.RED}Threads:{Fore.RESET} "))
 
 def load_proxies():
     if not os.path.exists("proxies.txt"):
@@ -32,7 +32,7 @@ def load_proxies():
             time.sleep(10)
             os._exit(0)
 
-print("\n[1] Proxies\n[2] Proxyless")
+print(f"\n{Fore.RED}[1] {Fore.RESET}Proxies\n{Fore.RED}[2] {Fore.RESET}Proxyless")
 option = int(input("\n> "))
 if option == 1:
     load_proxies()
@@ -51,10 +51,9 @@ def thread_starter():
     result, error = obj.follow()
     if result == True:
         counter += 1
-        safe_print(f"{Fore.RESET}[{Fore.GREEN}SUCCESS{Fore.RESET}] " + "Followed ({})".format(counter))
+        safe_print(f"{Fore.RESET}[{Fore.GREEN}SUCCESS{Fore.RESET}] Followed {format(counter)} times")
     else:
-        time.sleep(1)
-
+        time.sleep(5)
 while True:
     if threading.active_count() <= threads:
         try:
