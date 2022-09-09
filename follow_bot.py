@@ -3,6 +3,7 @@ words = [word.strip() for word in open("name.txt", encoding="utf-8")]
 len(words)
 336531
 word = choice(words)
+
 try:
     import requests, random, string
 except ImportError:
@@ -106,11 +107,8 @@ class spotify:
                 "https://api.spotify.com/v1/me/following?type=user&ids=" + self.profile,
                 headers = headers
             )
-            self.session.put(
-                
-            )
             return True, None
         except:
             return False, "while following"
 
-# TY USERAGENTS
+#Thanks Useragents
