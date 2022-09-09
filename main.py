@@ -5,10 +5,10 @@ from colorama import Fore, init
 cmd = 'mode 50,30'
 os.system(cmd)
 
-print(f"        {Fore.CYAN}Juevee's Spotify Auto | @useragents {Fore.CYAN}")
+print(f"{Fore.RED}                     __\n                _   /  |\n              | \  \/_/\n               \_\| / __              \n                  \/_/__\           .--='/~\ \n           ____,__/__,_____,______)/   /[~]]]\n            -,-----,--\--,-----,---,\'-' [[~]]\n        Spotify Bot__/\_            '--=.\]/\n                  /_/ |\\\n                       \/\n\n")
 print(f"\n           {Fore.YELLOW}[ + ]{Fore.YELLOW} Spotify Auto | [{Fore.GREEN}Online{Fore.RESET}{Fore.YELLOW}]{Fore.YELLOW}")
 print(f"           {Fore.YELLOW}[ + ]{Fore.YELLOW} Proxy status | [{Fore.GREEN}Online{Fore.RESET}{Fore.YELLOW}]{Fore.YELLOW}")
-print(f"\n    {Fore.MAGENTA}All services are running smoothly! 9k/day{Fore.MAGENTA}")
+print(f"\n    {Fore.RED}All services are running smoothly! 9k/day{Fore.RED}")
 
 lock = threading.Lock()
 counter = 0
@@ -51,9 +51,9 @@ def thread_starter():
     result, error = obj.follow()
     if result == True:
         counter += 1
-        safe_print("Followed {}".format(counter))
+        safe_print(f"{Fore.GREEN}[SUCCESS]" + "Followed ({})".format(counter))
     else:
-        time.sleep(10)
+        time.sleep(1)
 
 while True:
     if threading.active_count() <= threads:
