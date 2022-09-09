@@ -5,10 +5,7 @@
   
   # Proxyless Spotify Follow Bot Auto
   
-  From @useragents
-  
-  [Web Version](https://replit.com/@Juevee/Juevee-Spotify-Follow-Auto?v=2)
-  
+    
 <h1>
 🌟 Join my Discord server <a href="https://discord.gg/A8kUXgVDAc">here</a> 🌟
 </h1>
